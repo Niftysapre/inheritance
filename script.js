@@ -163,3 +163,107 @@
 // employee.setSurn('Belogesch')
 // console.log(employee.getName() + ' ' + employee.getSurn());
 // console.log(employee.getFull())
+
+// задание 9 
+ 
+// class User { 
+//  #name; 
+  
+//  setName(name) { 
+//   this.#name = name; 
+//  } 
+//  getName() { 
+//   return this.#name; 
+//  } 
+// } 
+ 
+// class Employee extends User { 
+//  setName(name) { 
+//   if (name.length > 0) { 
+//    this.setName(++this.getName()); 
+//   } 
+//  } 
+// } 
+ 
+// задание 10 
+ 
+// class User { 
+//  setName(name) { 
+//   if (this._notEmpty(name)) { 
+//    this.name = name; 
+//   } 
+//  } 
+//  getName() { 
+//   return this.name; 
+//  } 
+  
+//  _notEmpty(str) { 
+//   return str.length > 0; 
+//  } 
+// } 
+// class Employee extends User { 
+//  setSurn(surn) { 
+//   if (this._notEmpty(surn)) { 
+//    this.surn = surn; 
+//   } 
+//  } 
+//  getSurn() { 
+//   return this.surn; 
+//  } 
+// } 
+ 
+// задание 11 
+ 
+// class User { 
+//  _name; 
+  
+//  setName(name) { 
+//   this._name = name; 
+//  } 
+//  getName() { 
+//   return this._name; 
+//  } 
+// } 
+ 
+// class Employee extends User { 
+//  setName(name) { 
+//   if (name.length > 0) { 
+//    this._name = name; 
+//   } 
+//  } 
+// } 
+ 
+// задание 12 
+ 
+// class User { 
+//  setName(name) { 
+//   this._name = name; 
+//  } 
+//  getName() { 
+//   return this._name; 
+//  } 
+// } 
+// class Employee extends User { 
+//  setYear(year) { 
+//   this._year = year; 
+//  } 
+//  getYear() { 
+//   return this._year; 
+//  } 
+// } 
+// class Programmer extends Employee { 
+//  setSkill(skill) { 
+//   this._skill = skill; 
+//  } 
+//  getSkill() { 
+//   return this._skill; 
+//  } 
+// } 
+// class Designer extends Employee { 
+//  setSkill(skill) { 
+//   this._skill = skill; 
+//  } 
+//  getSkill() { 
+//   return this._skill; 
+//  } 
+// }
